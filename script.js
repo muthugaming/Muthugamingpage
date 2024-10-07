@@ -17,7 +17,7 @@ const retrySound = new Audio(''); // Path to your Retry sound
 let score = 0;
 let goatPosition = 125; // Starting position of the goat
 let gameInterval;
-const gameSpeed = 9; // Speed of object movement
+const gameSpeed = 10; // Speed of object movement
 let hitCount = 0; // Count of hits
 
 function startGame() 
@@ -97,7 +97,7 @@ function gameOver() {
 
 function resetObject(object) {
     object.style.top = '-150px'; // Start off screen at the top
-    object.style.left = `${Math.floor(Math.random() * (300 - 70))}px`; // Random X position
+    object.style.left = `${Math.floor(Math.random() * (300 - 10))}px`; // Random X position
 }
 
 function moveObject(object) {
