@@ -112,12 +112,12 @@ function moveObject(object) {
 
 // Movement functions for buttons
 function moveGoatLeft() {
-    goatPosition = Math.max(goatPosition - 10, 0); // Move left
+    goatPosition = Math.max(goatPosition - 30, 0); // Move left
     goat.style.left = `${goatPosition}px`;
 }
 
 function moveGoatRight() {
-    goatPosition = Math.min(goatPosition + 10, 290); // Move right
+    goatPosition = Math.min(goatPosition + 30, 380); // Move right
     goat.style.left = `${goatPosition}px`;
 }
 
